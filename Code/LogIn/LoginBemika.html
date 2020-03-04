@@ -17,11 +17,18 @@
     <div class="main">
       <h2>Robin Assistant</h2>
         <form id="form_id" method="post" name="myform">
-          <label>User Name :</label>
-          <input type="text" name="username" id="username"/>
-          <label>Password :</label>
-          <input type="password" name="password" id="password"/>
-          <input type="button" value="Login" id="submit" onclick="validate()"/>
+          <div class="form-container">
+            <label>User Name :</label><br>
+            <input type="text" name="username" id="username"/>
+          </div>
+          
+          <div class="form-container">
+            <label>Password :</label><br>
+            <input type="password" name="password" id="password"/>
+          </div>
+          <div class="form-container-submit">
+            <input type="button" value="Login" id="submit" onclick="validate()"/>
+          </div>
         </form>
     </div>
   </div>
