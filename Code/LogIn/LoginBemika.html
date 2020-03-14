@@ -15,19 +15,20 @@
 <body>
   <div class="container">
     <div class="main">
-      <h2>Robin Assistant</h2>
+
+      <img src="icons/Logo_robin_assitant.svg" alt="logo" class="logo"/>
+      <h2>Log in</h2>
+      <h3>Begeleider logt in voor patient</h3>
         <form id="form_id" method="post" name="myform">
           <div class="form-container">
-            <label>User Name :</label><br>
-            <input type="text" name="username" id="username"/>
+            <input type="text" name="username" placeholder="Gebruikersnaam" id="username" class="username"/><br>
           </div>
           
           <div class="form-container">
-            <label>Password :</label><br>
-            <input type="password" name="password" id="password"/>
+            <input type="password" name="password" placeholder="Wachtwoord" id="password" class="password"/></div><br>
           </div>
           <div class="form-container-submit">
-            <input type="button" value="Login" id="submit" onclick="validate()"/>
+            <input type="button" value="Inloggen" class="btn" id="submit" onclick="validate()"/>
           </div>
         </form>
     </div>

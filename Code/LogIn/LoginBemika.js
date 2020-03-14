@@ -6,7 +6,7 @@ var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
 if ( username == "begeleider" && password == "begeleider123"){
 alert ("Login successfully");
-window.location = "account.html"; // Naar andere pagina.
+window.location = "Account/account.html"; // Naar andere pagina.
 return false;
 }
 else{
@@ -18,6 +18,6 @@ document.getElementById("username").disabled = true;
 document.getElementById("password").disabled = true;
 document.getElementById("submit").disabled = true;
 return false;
-}
-}
+    }
+  }
 }
