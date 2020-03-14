@@ -1,0 +1,42 @@
+h2{
+    padding: 30px 35px;
+    margin: -10px -50px;
+    text-align:center;
+    border-radius: 10px 10px 0 0;
+    font-family: Arial;
+    font-weight: bold;
+    color: #67BD9A;
+}
+
+/*design button*/
+.submit-button { 
+    background-color: #67BD9A;
+    color: #EFEFEF;
+    font-family: arial;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px 20px;
+    opacity: 0.9;
+    border: none;
+    margin: 5px;
+    width: 100px;
+    
+}
+
+/*position button*/
+.form-accountbtn{
+    width: 100%;
+
+    margin-left: 30%;
+    margin-right: 30%;
+
+align-items: center;
+
+display: flex;
+
+justify-content: center;
+
+display: block;
+
+
+}
