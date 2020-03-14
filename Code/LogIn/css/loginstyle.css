@@ -1,8 +1,11 @@
-h2{
+h2, h3{
     padding: 30px 35px;
     margin: -10px -50px;
     text-align:center;
     border-radius: 10px 10px 0 0;
+    font-family: Arial;
+    font-weight: bold;
+    color: #67BD9A;
 }
 hr{
     margin: 10px -50px;
@@ -11,8 +14,27 @@ hr{
     margin-bottom: 40px;
 }
 
+.logo {
+    width: 100px;
+    height: 50px;
+}
 
-    .form-container{
+.logodiv {
+    width: 100%;
+    display: flex;
+}
+
+/*placeholders username & password */
+.password::placeholder, .username::placeholder {
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    color: #67BD9A;
+}
+
+/*username*/
+
+    .form-container-username{
 
 width: 100%;
 
@@ -22,7 +44,38 @@ display: flex;
 
 justify-content: center;
 
+
+
 }
+
+.username {
+    background-image: url('icons/Icon_profiel.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+/*password*/
+
+.form-container-passw{
+
+    width: 100%;
+    
+    align-items: center;
+    
+    display: flex;
+    
+    justify-content: center;
+    
+    
+    
+    }
+
+    .password {
+        background-image: url('icons/Icon_wachtwoord.svg');
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+    
 
     #form_id {
         display: flex;
@@ -30,6 +83,8 @@ justify-content: center;
         align-items: center;
         flex-direction: column;
     }
+
+/*button*/
 
     .form-container-submit{
         width: 100%;
@@ -39,4 +94,15 @@ align-items: center;
 display: flex;
 
 justify-content: center;
+    }
+
+    .btn { 
+        background-color: #67BD9A;
+        color: #EFEFEF;
+        font-family: arial;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 15px 20px;
+        opacity: 0.9;
+        border: none;
     }
