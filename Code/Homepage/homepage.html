@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homepage</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="CSS/homepagestyle.css">
+
+<script src="Homepage.js"></script>
+
+
 </head>
 <body>
+    <div class="container">
+        <div class="main">
+    <div class="header-container">
+        <header>
+            <img src="icons/Logo_robin_assitant.svg" class="logo" alt="logo" />
+        </header>
+            <div class="welcome-container"> <span class="welcome">Welkom :)</span>
+            </div>
+
+            <div class="form-accountbtn">
+                <button id="button"  onClick="location.href='Taken/Taken.html'" class="submit-button" > Taken > </button>
+            </br>
+            
+                <button id="button"  onClick="location.href='Kalender/Kalender.html'" class="submit-button" > Kalender > </button>
+            </br>
+            
+                <button id="button"  onClick="location.href='Profiel/Profiel.html'" class="submit-button" > Profiel > </button>
+            </br>
+
+
+        </div>
+    </div>
+</div>
+
+   <div class="bottom-container">
+      <button id="alarmbtn" onclick="openForm"> <img src="icons/Icon_alarm.svg" class="alarm"></img></button>
+    </div>
     
+
 </body>
 </html>
