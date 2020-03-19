@@ -138,6 +138,11 @@ justify-content: center;
         font-size: 22px;
     }
 
+
+input {
+    text-align: center;
+}
+
     input[type=text], select {
         width: 295px;
         padding: 12px 20px;
@@ -147,7 +152,7 @@ justify-content: center;
         border-radius: 15px;
         box-sizing: border-box;
         background-color: #efefef;
-        text-align: left;
+        text-align: center;
       }
 
       input[type=password], select {
