@@ -1,10 +1,14 @@
+body {
+    background-color: #EFEFEF;
+}
+
 h2, h3{
-    padding: 30px 35px;
+    padding: 10px 35px;
     margin: -10px -50px;
     text-align:center;
     border-radius: 10px 10px 0 0;
     font-family: Arial;
-    font-weight: bold;
+    font-weight: normal;
     color: #67BD9A;
 }
 hr{
@@ -12,6 +16,17 @@ hr{
     border: 0;
     border-top: 1px solid #ccc;
     margin-bottom: 40px;
+}
+
+.main h2 {
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.main h3 {
+    font-size: 14px;
+    padding-bottom: 30px ;
+    font-weight: 400;
 }
 
 /*logo*/
@@ -22,16 +37,21 @@ hr{
 }
 
 .logodiv {
-    width: 100%;
-    display: flex;
+    margin-top: 118px;
+    margin-bottom: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 /*placeholders username & password */
 .password::placeholder, .username::placeholder {
     font-family: Arial;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     color: #67BD9A;
+    padding-left: 40px;
 }
 
 /*username*/
@@ -54,6 +74,8 @@ justify-content: center;
     background-image: url('icons/Icon_profiel.svg');
     background-repeat: no-repeat;
     background-position: left;
+    background-size: 8%;
+    background-position-x: 15px;
 }
 
 /*password*/
@@ -76,6 +98,8 @@ justify-content: center;
         background-image: url('icons/Icon_wachtwoord.svg');
         background-repeat: no-repeat;
         background-position: left;
+        background-size: 8%;
+    background-position-x: 15px;
     }
     
 
@@ -99,12 +123,40 @@ justify-content: center;
     }
 
     .btn { 
+        width: 295px;
+        border-radius: 15px;
         background-color: #67BD9A;
         color: #EFEFEF;
         font-family: arial;
         font-weight: bold;
         cursor: pointer;
-        padding: 15px 20px;
+        padding: 10px 20px;
         opacity: 0.9;
         border: none;
+        margin-top: 125px;
+        margin-bottom: 61px;
+        font-size: 22px;
     }
+
+    input[type=text], select {
+        width: 295px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        box-sizing: border-box;
+        background-color: #efefef;
+        text-align: left;
+      }
+
+      input[type=password], select {
+        width: 295px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        box-sizing: border-box;
+        background-color: #efefef;
+      }
