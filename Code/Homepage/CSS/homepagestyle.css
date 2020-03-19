@@ -1,85 +1,419 @@
+body {
+	background-color: #efefef
+}
+
 .header-container {
-    display: block;
-    margin-left: auto;
-    margin-right: auto }  
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
 
 .logo {
-    width: 100%;
-    height: 70px;
+	width: 100%;
+	height: 70px
 }
 
-/*span welcome*/
 span.welcome {
-    display: block; 
-    width: 100%;
-    height: 100px;
-    padding: 5px;
-    border: none;
-    border-radius: 10px 10px 0;
-    font-family: Arial;
-    font-weight: bold;
-    text-align: center;
-    background-color: #67BD9A; 
-    color: #EFEFEF;
-  }
-
-  /*design button*/
-.submit-button { 
-    background-color: #EFEFEF;
-    color:#67BD9A;
-    font-family: arial;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 15px 20px;
-    opacity: 0.9;
-    border: none;
-    border-radius: 4px;
-    margin: 5px;
-    width: 135px;
-    
+	display: block;
+	width: 100%;
+	height: 187px;
+	border: none;
+	border-radius: 20px 10px 0;
+	font-family: Arial;
+	font-weight: 700;
+	text-align: left;
+	background-color: #67bd9a;
+	color: #efefef;
+	padding-right: 16px;
+	padding-left: 33px;
+	padding-top: 39px
 }
 
-/*position button*/
-.form-accountbtn{
-    width: 100%;
-    padding: 5px;
-    margin-left: 30%;
-    margin-right: 30%;
-
-align-items: center;
-
-display: flex;
-
-justify-content: center;
-
-display: block;
-
-
+span.welcome h2 {
+	font-size: 33px;
+	margin-bottom: 3px
 }
 
-/*alarm button | needs fixing*/
-
-.bottom-container {
-    display: block; 
-    width: 100%;
-    height: 60px;
-    border: none;
-    border-radius: 10px 10px 0;
-    position: absolute;
-    bottom: 0;
-    background-color: #EFEFEF; 
-    text-align: center;
+.welcome_info p {
+	font-size: 20px;
+	margin-top: 0
 }
 
-.alarm {
-    width: 50px;
-    height: 50px;
-   align-items: center;
+.submit-button {
+	background-color: #efefef;
+	color: #67bd9a;
+	font-family: arial;
+	font-weight: 700;
+	cursor: pointer;
+	padding: 15px 20px;
+	opacity: .9;
+	border: none;
+	border-radius: 12px;
+	margin: 5px;
+	width: 325px;
+	height: 84px;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2), 0 5px 10px 0 rgba(0, 0, 0, .19);
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 15px;
 }
 
-.alarmbtn {
-    margin: 0 auto;
-    align-items: center;
-    width: 150px;
-    
+.form-accountbtn {
+	width: 100%;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	display: block;
+	margin-left: 15px;
+	margin-right: 25px
+}
+
+.takenIcon {
+	width: 42px;
+	height: 32px
+}
+
+.textButton {
+    font-size: 33px;
+    padding-top: 5px;
+    margin-left: 80px;
+}
+
+.textButtonKalender {
+    font-size: 33px;
+    padding-top: 5px;
+    margin-left: 42px;
+}
+
+.imgButton {
+	text-align: left
+}
+
+
+
+:root {
+	--web-view-ids: Kalender___8
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none
+}
+
+#Kalender___8 {
+	position: absolute;
+	width: 375px;
+	height: 810px;
+	background-color: rgba(255, 255, 255, 1);
+	overflow: hidden;
+	--web-view-name: Kalender – 8;
+	--web-view-id: Kalender___8;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0
+	}
+	100% {
+		opacity: 1
+	}
+}
+
+@keyframes slide-in {
+	0% {
+		transform: translateY(100%)
+	}
+}
+
+.Rectangle_1476 {
+	filter: drop-shadow(0 3px 6px rgba(0, 0, 0, .161));
+	position: absolute;
+	overflow: visible;
+	width: 393px;
+	height: 106px;
+	left: 0;
+	top: 0
+}
+
+.Rectangle_1474 {
+	position: absolute;
+	overflow: visible;
+	width: 375px;
+	height: 826px;
+	left: 0;
+	top: 85px
+}
+
+.Rectangle_1475 {
+	filter: drop-shadow(0 -3px 17px rgba(0, 0, 0, .161));
+	position: absolute;
+	overflow: visible;
+	width: 426px;
+	height: 382px;
+	left: 0;
+	top: 503px
+}
+
+.Rectangle_1499 {
+	filter: drop-shadow(0 3px 6px rgba(0, 0, 0, .161));
+	position: absolute;
+	overflow: visible;
+	width: 110px;
+	height: 137px;
+	left: 31px;
+	top: 605px
+}
+
+.Rectangle_1501 {
+	filter: drop-shadow(0 3px 6px rgba(0, 0, 0, .161));
+	position: absolute;
+	overflow: visible;
+	width: 110px;
+	height: 137px;
+	left: 141px;
+	top: 605px
+}
+
+.Rectangle_1502 {
+	filter: drop-shadow(0 3px 6px rgba(0, 0, 0, .161));
+	position: absolute;
+	overflow: visible;
+	width: 110px;
+	height: 137px;
+	left: 251px;
+	top: 605px
+}
+
+.Path_114 {
+	overflow: visible;
+	position: absolute;
+	width: 99.518px;
+	height: 98.045px;
+	left: 141px;
+	top: 218.443px;
+	transform: matrix(1, 0, 0, 1, 0, 0)
+}
+
+.Path_13 {
+	overflow: visible;
+	position: absolute;
+	width: 42.506px;
+	height: 42.506px;
+	left: 0;
+	top: 0;
+	transform: matrix(1, 0, 0, 1, 0, 0)
+}
+
+#Group_10 {
+	position: absolute;
+	width: 42.185px;
+	height: 32.44px;
+	left: 57px;
+	top: 637.602px;
+	overflow: visible
+}
+
+.Rectangle_1508 {
+	position: absolute;
+	overflow: visible;
+	width: 35.979px;
+	height: 6.892px;
+	left: 0;
+	top: 0
+}
+
+.Rectangle_1509 {
+	position: absolute;
+	overflow: visible;
+	width: 35.979px;
+	height: 6.892px;
+	left: 0;
+	top: 10.457px
+}
+
+.Rectangle_1510 {
+	position: absolute;
+	overflow: visible;
+	width: 35.979px;
+	height: 6.892px;
+	left: 0;
+	top: 21.483px
+}
+
+.Path_118 {
+	overflow: visible;
+	position: absolute;
+	width: 28.796px;
+	height: 32.675px;
+	left: 19.389px;
+	top: 5.765px;
+	transform: matrix(1, 0, 0, 1, 0, 0)
+}
+
+#Group_23 {
+	position: absolute;
+	width: 349px;
+	height: 55px;
+	left: 13px;
+	top: 742px;
+	overflow: visible
+}
+
+#Group_15 {
+	position: absolute;
+	width: 349px;
+	height: 55px;
+	left: 0;
+	top: 0;
+	overflow: visible
+}
+
+.Rectangle_1531 {
+	filter: drop-shadow(1px 3px 6px rgba(0, 0, 0, .161));
+	position: absolute;
+	overflow: visible;
+	width: 367px;
+	height: 73px;
+	left: 0;
+	top: 0
+}
+
+#Backward_arrow {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 26px;
+	top: 17px;
+	overflow: visible;
+	cursor: pointer
+}
+
+.Path_10 {
+	overflow: visible;
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	transform: translate(0, 0) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
+	transform-origin: center;
+	left: 0;
+	top: 0
+}
+
+.Path_105 {
+	overflow: visible;
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	transform: translate(0, 0) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
+	transform-origin: center;
+	left: 0;
+	top: 0
+}
+
+#Group_22 {
+	position: absolute;
+	width: 27px;
+	height: 19px;
+	left: 158px;
+	top: 19px;
+	overflow: visible;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Home_1.html;
+	cursor: pointer
+}
+
+.Rectangle_1534 {
+	position: absolute;
+	overflow: visible;
+	width: 27px;
+	height: 5px;
+	left: 0;
+	top: 0
+}
+
+.Rectangle_1535 {
+	position: absolute;
+	overflow: visible;
+	width: 27px;
+	height: 5px;
+	left: 0;
+	top: 7px
+}
+
+.Rectangle_1536 {
+	position: absolute;
+	overflow: visible;
+	width: 27px;
+	height: 5px;
+	left: 0;
+	top: 14px
+}
+
+.Path_106 {
+	overflow: visible;
+	position: absolute;
+	width: 5.938px;
+	height: 11.207px;
+	left: 18.396px;
+	top: .83px;
+	transform: matrix(1, 0, 0, 1, 0, 0)
+}
+
+.Path_107 {
+	overflow: visible;
+	position: absolute;
+	width: 5.938px;
+	height: 11.207px;
+	left: 0;
+	top: .83px;
+	transform: matrix(1, 0, 0, 1, 0, 0)
+}
+
+.Path_108 {
+	overflow: visible;
+	position: absolute;
+	width: 22.121px;
+	height: 22.121px;
+	left: 1.106px;
+	top: 0;
+	transform: matrix(1, 0, 0, 1, 0, 0)
+}
+
+.Path_109 {
+	overflow: visible;
+	position: absolute;
+	width: 8.127px;
+	height: 3.318px;
+	left: 8.103px;
+	top: 23.227px;
+	transform: matrix(1, 0, 0, 1, 0, 0)
+}
+
+.Rectangle_1538 {
+	filter: drop-shadow(0 3px 6px rgba(0, 0, 0, .161));
+	position: absolute;
+	overflow: visible;
+	width: 99px;
+	height: 87px;
+	left: 148px;
+	top: 518px;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Kalender___9.html;
+	cursor: pointer
+}
+
+.Path_145 {
+	overflow: visible;
+	position: absolute;
+	width: 43.886px;
+	height: 43.864px;
+	left: 168.471px;
+	top: 533.35px;
+	transform: matrix(1, 0, 0, 1, 0, 0)
 }
